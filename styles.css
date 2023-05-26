@@ -1,45 +1,167 @@
-#inicio {
-    background-color: #f2f2f2;
-    padding: 50px;
+/* Add some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header img {
+  height: 200px;
+}
+
+.main-nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Style the navigation menu */
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main-nav a:hover {
+  background-color: #555;
+}
+
+/* Add some basic styling to the main content */
+.image-container {
+  position: relative;
+}
+
+.left-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Style the footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: white;
+}
+
+/* Make the website responsive */
+@media (max-width: 600px) {
+  .site-header, .main-nav, .site-footer {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .inicio-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .main-nav a {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom:10px;
   }
-  
-  .inicio-image img {
-    width: 300px;
-    height: auto;
+}
+
+/* card: styles.css */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: calc(50% - 20px);
   }
-  
-  .inicio-text {
-    width: 50%;
-  }
-  
-  .inicio-text h3 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .inicio-text p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff5c00;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #bf3b6c;
-  }
-  
+}
+
+/* Custom styling for the contact form */
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+}
+
+.main-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-content input[type="text"],
+.main-content input[type="email"],
+.main-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-content textarea {
+  height: 120px;
+}
+
+.main-content button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content button[type="submit"]:hover {
+  background-color: #555;
+}

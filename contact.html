@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>My Website</title>
+  <title>Contact Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,15 +17,21 @@
   </header>
   <main class="site-main">
     <section id="content" class="main-content">
-      <!-- This is the main content of your website. -->
-      <div class="image-container">
-        <img src="images/luxuryFlowers/luxuryFlower1.jpeg" alt="Your Image" class="left-image">
-        <div class="text-container">
-          <p>Your love phrase goes here</p>
-          <a href="catalog.html" class="btn">Go to Catalog</a>
-        </div>
-      </div>
-    </section>
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      
   </main>
   <footer class="site-footer">
     <p>Copyright &copy; 2023 My Website</p>
@@ -35,5 +40,3 @@
   </footer>
 </body>
 </html>
-
-
