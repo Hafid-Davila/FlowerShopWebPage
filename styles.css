@@ -21,17 +21,13 @@ body {
   height: 150px;
 }
 
+
+/* Style the navigation menu */
 .main-nav a {
   display: inline-block;
   text-decoration: none;
   margin: 0 10px;
-}
-
-/* Style the navigation menu */
-.main-nav a {
   color:#ae1f4b;
-  text-decoration: none; 
-  margin-bottom: 20px;
 }
 
 .main-nav a:hover {
