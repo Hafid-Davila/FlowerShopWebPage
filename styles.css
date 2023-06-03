@@ -143,6 +143,7 @@ body {
 
 .main-content input[type="text"],
 .main-content input[type="email"],
+.main-content input[type="tel"],
 .main-content textarea {
   width: 100%;
   padding: 10px;
