@@ -18,9 +18,8 @@ body {
 }
 
 .site-header img {
-  height: 150px;
+  height: 200px;
 }
-
 
 /* Style the navigation menu */
 .main-nav a {
@@ -38,11 +37,35 @@ body {
 /* Add some basic styling to the main content */
 .image-container {
   position: relative;
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor al hacer zoom */
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.7;
+}
+
+.image-container:hover img {
+  transform: scale(1.2); /* Zoom en la imagen */
 }
 
 .left-image {
   width: 100%;
   height: auto;
+  transition: transform 0.5s ease; /* Transición suave al hacer zoom */
 }
 
 .text-container {
@@ -66,7 +89,6 @@ body {
 .btn:hover {
   background-color: #958389;
 }
-
 
 /* Style the footer */
 .site-footer {
@@ -99,6 +121,8 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
 .card {
@@ -110,6 +134,11 @@ body {
 .card img {
   width: 75%;
   height: auto;
+  transition: transform 0.5s ease; /* Transición suave al hacer zoom */
+}
+
+.card img:hover {
+  transform: scale(1.2); /* Zoom en la imagen */
 }
 
 @media (max-width: 600px) {
@@ -168,3 +197,31 @@ body {
 .main-content button[type="submit"]:hover {
   background-color: #958389;
 }
+
+/* Custom styling for the product page */
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
