@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,31 +11,54 @@
 </head>
 <body>
   <header class="site-header">
-    <img src="images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
-    <nav class="main-nav">
-      <a href="index.html">HOGAR</a>
-      <a href="pages/categorias.html">TIENDA</a>
-      <a href="pages/contact.html">ENTREGA A DOMICILIO</a>
-    </nav>
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="index.html">HOGAR</a>
+        <a href="/pages/categorias.html">TIENDA</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <a href="/pages/nuestraHistoria.html">NUESTRA HISTORIA</a>
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
   </header>
   <main class="site-main">
     <section id="content" class="main-content">
       <!-- This is the main content of your website. -->
-      <div>
-        <img src="images/banners/lxuryFlower1.svg" alt="Your Image" class="left-image">
+      <div class="image-container carousel-container">
+        <!-- Images for the carousel -->
+        <img class="carousel" src="/images/banners/1.svg" alt="Imagen de flores 1">
+        <img class="carousel" src="/images/banners/2.svg" alt="Imagen de flores 2">
+        <img class="carousel" src="/images/banners/3.svg" alt="Imagen de flores 3">
         <div class="text-container">
           <p>Siempre has sido aquello que he estado buscando.</p>
-          <a href="pages/catalagoLuxury.html" class="btn">Ve a nuestro cátalogo</a>
+          <a href="pages/categorias.html" class="btn">Ve a nuestro catálogo</a>
         </div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
-    <p>Copyright &copy; 2019 Regocijo Floreris Online</p>
     <a href="https://www.instagram.com/my_instagram_account/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/RegocijoFloreriaOnline  " target="_blank">Facebook</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline" target="_blank">Facebook</a>
+    <p id="copyright">Copyright &copy; 2019 Regocijo Floreria Online</p>
   </footer>
+
+  <!-- Aquí se agrega el script de JavaScript -->
+  <script src="/components/burgerMenu.js"></script>
+  <script src="/components/carousel.js"></script>
+  <script>
+    // Actualizar automáticamente el año de copyright
+    var year = new Date().getFullYear(); 
+    document.getElementById('copyright').innerText = "Copyright © " + year + " Regocijo Floreria Online";
+  </script>
 </body>
 </html>
-
-

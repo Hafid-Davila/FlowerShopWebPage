@@ -32,6 +32,7 @@ body {
 .main-nav a:hover {
   background-color: #958389;
   border-radius: 4%;
+  color: #ffffff;
 }
 
 /* Add some basic styling to the main content */
@@ -58,7 +59,7 @@ body {
   opacity: 0.7;
 }
 
-.image-container:hover img {
+.image-container:hover img:not(.carousel) {
   transform: scale(1.2); /* Zoom en la imagen */
 }
 
@@ -70,16 +71,20 @@ body {
 
 .text-container {
   position: absolute;
-  bottom: 20px;
+  top: 50%; 
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
   display: inline-block;
-  background-color: #a12349;
+  background-color: #308E41;
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
@@ -87,8 +92,10 @@ body {
 }
 
 .btn:hover {
-  background-color: #958389;
+  background-color: #10CF33;
+  color: #000;
 }
+
 
 /* Style the footer */
 .site-footer {
@@ -223,5 +230,88 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
+}
+
+/* Estilo para el dropdown */
+#categorias-dropdown {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #a12349;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#categorias-dropdown:hover {
+  border-color: #ae1f4b;
+  background-color: #958389;
+  color: #ffffff;
+}
+
+#categorias-dropdown:focus {
+  outline: none;
+  border-color: #ae1f4b;
+}
+
+/* Style for mobile menu */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #a12349;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Estilos para el menú de hamburguesa */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
+
+.burger.open div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Estilos para el carrusel */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 2s ease-in-out; 
 }
 

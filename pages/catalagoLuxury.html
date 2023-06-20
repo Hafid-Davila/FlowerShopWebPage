@@ -8,6 +8,8 @@
   <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
   <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
   <link rel="stylesheet" href="/styles.css">
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -16,69 +18,74 @@
       <a href="/index.html">HOGAR</a>
       <a href="/pages/categorias.html">TIENDA</a>
       <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+      <a href="/pages/nuestraHistoria.html">NUESTRA HISTORIA</a>
+      <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
     </nav>
   </header>
 
   <main class="site-main">
     <section id="content" class="main-content">
- <!-- Luxury Flowers Section -->
-        <section id="luxury-flowers">
-            <h2>Luxury Flowers</h2>
-            <div class="card-container">
-              <!-- Add cards for Luxury Flowers section here -->
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower1.svg" alt="Item 1">
-                <h3>Luxury Flower 1</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower2.svg" alt="Item 1">
-                <h3>Luxury Flower 2</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower3.svg" alt="Item 1">
-                <h3>Luxury Flower 3</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower4.svg" alt="Item 1">
-                <h3>Luxury Flower 4</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower5.svg" alt="Item 1">
-                <h3>Luxury Flower 5</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower6.svg" alt="Item 1">
-                <h3>Luxury Flower 6</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower7.svg" alt="Item 1">
-                <h3>Luxury Flower 7</h3>
-                <p></p>
-              </div>
-              <div class="card">
-                <img src="/images/luxuryFlowers/luxuryFlower8.svg" alt="Item 1">
-                <h3>Luxury Flower 8</h3>
-                <p></p>
-              </div> 
-            </div>
-          </section>
-
+      <!-- Luxury Flowers Section -->
+      <section id="luxury-flowers">
+        <h2>Luxury Flowers</h2>
+        <!-- Menú desplegable de categorías -->
+        <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option>
+          <option value="/pages/catalagoRamos.html">Ramos</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <div class="card-container">
+          <!-- Add cards for Luxury Flowers section here -->
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower1.svg" alt="Item 1">
+            <h3>Luxury Flower 1</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower2.svg" alt="Item 1">
+            <h3>Luxury Flower 2</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower3.svg" alt="Item 1">
+            <h3>Luxury Flower 3</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower4.svg" alt="Item 1">
+            <h3>Luxury Flower 4</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower5.svg" alt="Item 1">
+            <h3>Luxury Flower 5</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower6.svg" alt="Item 1">
+            <h3>Luxury Flower 6</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower7.svg" alt="Item 1">
+            <h3>Luxury Flower 7</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="/images/luxuryFlowers/luxuryFlower8.svg" alt="Item 1">
+            <h3>Luxury Flower 8</h3>
+            <p></p>
+          </div> 
+        </div>
+      </section>
     </section>
-   
-    
-
   </main>
 
   <footer class="site-footer">
-    <p>Copyright &copy; 2019 Regocijo Floreris Online</p>
     <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/RegocijoFloreriaOnline  " target="_blank">Facebook</a>
+    <p>Copyright &copy; 2019 Regocijo Floreria Online</p>
   </footer>
 
 </body>

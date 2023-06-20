@@ -8,27 +8,35 @@
   <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
   <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
   <link rel="stylesheet" href="/styles.css">
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
 </head>
 <body>
   <header class="site-header">
     <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
     <nav class="main-nav">
-      <a href="/index.html">Home</a>
-      <a href="/pages/catalagoLuxury.html">Luxury Flowers</a>
-      <a href="/pages/catalagoRamos.html">Ramos</a>
-      <a href="/pages/catalagoCondolencias.html">Condolencias</a>
-      <a href="/pages/contact.html">Contáctanos</a>
+      <a href="/index.html">HOGAR</a>
+      <a href="/pages/categorias.html">TIENDA</a>
+      <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+      <a href="/pages/nuestraHistoria.html">NUESTRA HISTORIA</a>
+      <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
     </nav>
   </header>
-
+  
   <main class="site-main">
 
     <section id="content" class="main-content">
 
-        
       <!-- Ramos Section -->
       <section id="ramos">
         <h2>Ramos</h2>
+        <!-- Menú desplegable de categorías -->
+        <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>          
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
         <div class="card-container">
           <!-- Add cards for Banners section here -->
           <div class="card">
@@ -50,9 +58,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>Copyright &copy; 2019 Regocijo Floreris Online</p>
     <a href="https://www.instagram.com/my_instagram_account/" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/RegocijoFloreriaOnline  " target="_blank">Facebook</a>
+    <p>Copyright &copy; 2019 Regocijo Floreria Online</p>
   </footer>
 
 </body>

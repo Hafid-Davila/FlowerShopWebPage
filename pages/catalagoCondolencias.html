@@ -16,6 +16,8 @@
       <a href="/index.html">HOGAR</a>
       <a href="/pages/categorias.html">TIENDA</a>
       <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+      <a href="/pages/nuestraHistoria.html">NUESTRA HISTORIA</a>
+      <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
     </nav>
   </header>
   <main class="site-main">
@@ -23,6 +25,13 @@
       <!-- Catalog Section -->
       <section id="condolencias">
         <h2>Arreglos para Condolencias</h2>
+        <!-- Menú desplegable de categorías -->
+        <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>          
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
         <div class="card-container">
           <!-- Add cards for Catalog section here -->
           <div class="card">
@@ -53,9 +62,9 @@
           <!-- Add more cards here -->
   </main>
   <footer class="site-footer">
-    <p>Copyright &copy; 2019 Regocijo Floreris Online</p>
     <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/RegocijoFloreriaOnline  " target="_blank">Facebook</a>
+    <p>Copyright &copy; 2019 Regocijo Floreria Online</p>
   </footer>
 
 </body>
