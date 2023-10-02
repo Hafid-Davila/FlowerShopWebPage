@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
+  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
+  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
+  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+
+<body>
+
+  <header class="site-header">
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí añades la palabra "MENU" -->
+    <p class="menu-text">MENÚ</p>
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="/index.html">INICIO</a>
+        <a href="/pages/categorias.html">CATÁLAGO</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+
+    <section id="content" class="main-content">
+
+      <!-- Baskets Section -->
+      <section id="canastas">
+        <h2>Flower Baskets</h2>
+         <!-- Menú desplegable de categorías -->
+         <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalogoArreglosTemporada.html">Arreglos de Temporada</option>
+          <option value="/pages/catalagoRamos.html">Ramos</option>
+          <option value="/pages/catalogoBoxFlowers.html">Box Flowers</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>   
+          <option value="/pages/catalogoTazas.html">Flower Cups</option> 
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option> 
+          <option value="/pages/catalogoJarrones.html">Flower Jars</option>   
+           
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <!-- Add cards section here -->
+
+        <div class="card-container">
+
+          <!-- Add cards for Banners section here -->
+ 
+         <div class="card">
+           <img class="card-img" src="/images/canastas/canastaBicolor.svg" alt="canasta bicolor">
+           <h3 class="card-text">Canasta Bicolor</h3>
+           <p class="card-text">$1,800.00</p>
+           <button class="card-button">ID: CB1800</button>
+           <p class="card-text">(Presiona para copiar ID)</p>
+         </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/canastas/canastaMaria.svg" alt="canasta maria">
+            <h3 class="card-text">Canasta Maria</h3>
+            <p class="card-text">$1800.00</p>
+            <button class="card-button">ID: CM1800</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/canastas/canastaPrimaveral.svg" alt="canasta primaveral">
+            <h3 class="card-text">Canasta Primaveral</h3>
+            <p class="card-text">$800.00</p>
+            <button class="card-button">ID: CP800</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/canastas/canastaRegina.svg" alt="canasta regina mediana y grande">
+            <h3 class="card-text">Canasta Regina Mediana</h3>
+            <p class="card-text">$900.00</p>
+            <button class="card-button">ID: CRM900</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/canastas/canastaValentina1.svg" alt="canasta valentina color de flor  dependiendo la temporada">
+            <h3 class="card-text">Canasta Valentina</h3>
+            <p class="card-text">$1,450.00</p>
+            <button class="card-button">ID: CV1450</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/canastas/canastaXimena.svg" alt="canasta valentina color de flor  dependiendo la temporada">
+            <h3 class="card-text">Canasta Ximena</h3>
+            <p class="card-text">$1,850.00</p>
+            <button class="card-button">ID: CX1850</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+
+        </div> 
+
+        
+
+      </section>
+
+      <a href="#" class="back-to-top">Categorias</a>
+
+
+    </section>
+   
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline" target="_blank">Facebook</a>
+    <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
+  </footer>
+
+  <!-- Aquí se agrega el script de JavaScript -->
+  <script src="/components/burgerMenu.js"></script>
+
+  <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
+  <script src="/components/copyButton.js"></script>
+
+
+  <!-- Este codigo nos conecta a la funcion que nos ayuda a llevar nuestra pagina a la de contacto -->
+  <script src="/components/contact.js"></script>
+
+  <!-- Este codigo nos conecta a la funcion que nos ayuda a llevar nuestra pagina a la de contacto -->
+  <script src="/components/contact.js"></script>
+
+  <a href="https://wa.me/+526565340734" class="whatsapp-button" target="_blank">
+    <img src="/images/whatsappLogo.png" alt="WhatsApp">
+  </a>
+  
+  
+</body>
+</html>

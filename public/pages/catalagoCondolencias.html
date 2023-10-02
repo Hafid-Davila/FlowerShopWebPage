@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
+  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
+  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
+  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+
+<body>
+
+ <header class="site-header">
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí añades la palabra "MENU" -->
+    <p class="menu-text">MENÚ</p>
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="/index.html">INICIO</a>
+        <a href="/pages/categorias.html">CATÁLAGO</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="site-main">
+
+    <section id="content" class="main-content">
+
+      <!-- Condolencias sectio-->
+      <section id="condolencias">
+        <h2>Condolencias</h2>
+         <!-- Menú desplegable de categorías -->
+         <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalogoArreglosTemporada.html">Arreglos de Temporada</option>
+          <option value="/pages/catalagoRamos.html">Ramos</option>
+          <option value="/pages/catalogoBoxFlowers.html">Box Flowers</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>  
+          <option value="/pages/catalogoTazas.html">Flower Baskets</option> 
+          <option value="/pages/catalogoTazas.html">Flower Cups</option> 
+          <option value="/pages/catalogoJarrones.html">Flower Jars</option> 
+           
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <!-- Add cards section here -->
+
+        <dif class="card-container">
+
+          <!-- Add cards for Banners section here -->
+ 
+         <div class="card">
+           <img class="card-img" src="/images/condolencias/cruzCondolencia.svg" alt="Cruz Floral para condolencias">
+           <h3 class="card-text">Cruz Condolencias</h3>
+           <p class="card-text">$2,700.00</p>
+           <button class="card-button">ID: CC2700</button>
+           <p class="card-text">(Presiona para copiar ID)</p>
+         </div>
+         
+          <div class="card">
+            <img class="card-img" src="/images/condolencias/coronasCondolencia.svg" alt="Coronas florales para condolencias incluye la banda personalizada">
+            <h3 class="card-text">Coronas Condolencias</h3>
+            <p class="card-text">Cotización Necesaria <br> (Incluye banda personalizada)</p>
+            <button class="card-button">ID: COC0000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/condolencias/cubreFereto.svg" alt="Cubrefereto Floral">
+            <h3 class="card-text">Cubrefereto</h3>
+            <p class="card-text">$1,600.00</p>
+            <button class="card-button">ID: CF1600</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/condolencias/canastaCondolencias.svg" alt="Canasta de rosas o lilis">
+            <h3 class="card-text">Canastas Condolencias</h3>
+            <p class="card-text">Cotización Necesaria</p>
+            <button class="card-button">ID: CAC0000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/condolencias/jarronCondolencias.svg" alt="Jarron Floral">
+            <h3 class="card-text">Jarron Condolencias</h3>
+            <p class="card-text">$1,300.00</p>
+            <button class="card-button">ID: JC1300</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+        </div> 
+
+       
+        
+
+      </section>
+
+      <a href="#" class="back-to-top">Categorias</a>
+
+
+    </section>
+   
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline" target="_blank">Facebook</a>
+    <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
+  </footer>
+
+  <!-- Aquí se agrega el script de JavaScript -->
+  <script src="/components/burgerMenu.js"></script>
+
+  
+ <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
+ <script src="/components/copyButton.js"></script>
+
+
+ <!-- Este codigo nos conecta a la funcion que nos ayuda a llevar nuestra pagina a la de contacto -->
+ <script src="/components/contact.js"></script>
+
+  <a href="https://wa.me/+526565340734" class="whatsapp-button" target="_blank">
+    <img src="/images/whatsappLogo.png" alt="WhatsApp">
+  </a>
+  
+  
+</body>
+</html>

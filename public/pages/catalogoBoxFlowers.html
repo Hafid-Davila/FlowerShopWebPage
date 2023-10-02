@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
+  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
+  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
+  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+
+<body>
+
+  <header class="site-header">
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí añades la palabra "MENU" -->
+    <p class="menu-text">MENU</p>
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="/index.html">INICIO</a>
+        <a href="/pages/categorias.html">CATÁLAGO</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="site-main">
+
+    <section id="content" class="main-content">
+
+      <!-- Box Flowers Section -->
+      <section id="box-flowers">
+        <h2>Box Flowers</h2>
+         <!-- Menú desplegable de categorías -->
+         <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalogoArreglosTemporada.html">Arreglos de Temporada</option>
+          <option value="/pages/catalagoRamos.html">Ramos</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>  
+          <option value="/pages/catalogoCanastas.html">Flower Baskets</option> 
+          <option value="/pages/catalogoTazas.html">Flower Cups</option> 
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option> 
+          <option value="/pages/catalogoJarrones.html">Flower Jars</option>   
+           
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <!-- Add cards section here -->
+
+        <dif class="card-container">
+
+            <!-- Add cards for Banners section here -->
+  
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxComboHombre.svg" alt="Box flower para hombre incluye vino, chocolates y rosas">
+            <h3 class="card-text">Box Combo Hombre</h3>
+            <p class="card-text">$1,800.00</p>
+            <button class="card-button">ID: BCH1800</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/cajaLoveTulipan.svg" alt="caja con 10 tulipanes color a elegir">
+            <h3 class="card-text">Caja Love Tulipan</h3>
+            <p class="card-text">$1,350.00</p>
+            <button class="card-button">ID: CLT1350</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxLucia.svg" alt="Box con mensaje. Personalizado de 50 Rosas, color depende de la temporada">
+            <h3 class="card-text">Box Lucia 50</h3>
+            <p class="card-text">$1,500.00</p>
+            <button class="card-button">ID: BL501500</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxTulipanLover20.svg" alt="Box con 20 tulipanes color a elegir">
+            <h3 class="card-text">Box Tulipan Lover 20</h3>
+            <p class="card-text">$2,000.00</p>
+            <button class="card-button">ID: BTL202000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxEleni.svg" alt="Box con rosas y clavellinas">
+            <h3 class="card-text">Box Eleni</h3>
+            <p class="card-text">$1,300.00</p>
+            <button class="card-button">ID: BE1300</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxMariana.svg" alt="Box con rosas">
+            <h3 class="card-text">Box Mariana</h3>
+            <p class="card-text">$1,500.00</p>
+            <button class="card-button">ID: BM1500</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxMariana (2).svg" alt="caja con rosas">
+            <h3 class="card-text">Box Rosalia</h3>
+            <p class="card-text">$900.00</p>
+            <button class="card-button">ID: BR900</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/mirrorBox.svg" alt="caja espejo con rosas de color de su elección">
+            <h3 class="card-text">Mirror Box</h3>
+            <p class="card-text">$1,400.00</p>
+            <button class="card-button">ID: MB1400</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxSun.svg" alt="caja con girasoles">
+            <h3 class="card-text">Box Sun</h3>
+            <p class="card-text">$900.00</p>
+            <button class="card-button">ID: BS900</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxHappyBirthday.svg" alt="caja con mensaje">
+            <h3 class="card-text">Box Happy Birthday</h3>
+            <p class="card-text">$900.00</p>
+            <button class="card-button">ID: BHB900</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxCorbata.svg" alt="caja en forma de corbata rellena de licor y chocolates a elegir">
+            <h3 class="card-text">Box Corbata</h3>
+            <p class="card-text">Cotización Necesaria</p>
+            <button class="card-button">ID: BC0000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxCorazon.svg" alt="caja corazon con rosas y vino">
+            <h3 class="card-text">Box Corazón</h3>
+            <p class="card-text">$1450.00</p>
+            <button class="card-button">ID: BC1450</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxILovoYou.svg" alt="caja con rosas y tulipanes incluye chocolates Ferrero">
+            <h3 class="card-text">Box I Love You</h3>
+            <p class="card-text">$1780.00</p>
+            <button class="card-button">ID: BILY1780</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxLuciano.svg" alt="caja con chocolates Ferrero y rosas azules">
+            <h3 class="card-text">Box Luciano</h3>
+            <p class="card-text">Cotización Necesaria</p>
+            <button class="card-button">ID: BL0000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxComboMujer.svg" alt="caja con rosas chocolates y vino">
+            <h3 class="card-text">Box Combo Mujer</h3>
+            <p class="card-text">$1,500.00</p>
+            <button class="card-button">ID: BCM1500</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxMensajeEspecial.svg" alt="caja con mensaje especial personalizado, con chocolates Ferrero y Rosas (variedad de colores)">
+            <h3 class="card-text">Box Mensaje Especial</h3>
+            <p class="card-text">$1380.00</p>
+            <button class="card-button">ID: BME1380</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/cajaPrimaveralPersonalizado.svg" alt="Bolsa de carton negra con un mesaje personalizado">
+            <h3 class="card-text">Box Primaveral Personalizado</h3>
+            <p class="card-text">$1100.00</p>
+            <button class="card-button">ID: BPP1100</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/boxDulcesGlobo.svg" alt="caja con dulces surtidos, un globo y mensaje personalizado">
+            <h3 class="card-text">Box Dulces y Globo</h3>
+            <p class="card-text">$1200.00</p>
+            <button class="card-button">ID: BDG1200</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+          <div class="card">
+            <img class="card-img" src="/images/boxFlowers/cajaRedonda.svg" alt="caja con rosas y claveles color a elegir">
+            <h3 class="card-text">Box Redonda</h3>
+            <p class="card-text">$1000.00</p>
+            <button class="card-button">ID: BR1000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+
+
+
+
+
+
+ 
+        </div>
+
+      </section>
+
+      <a href="#" class="back-to-top">Categorias</a>
+
+
+    </section>
+   
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline" target="_blank">Facebook</a>
+    <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
+  </footer>
+
+  <!-- Aquí se agrega el script de JavaScript -->
+  <script src="/components/burgerMenu.js"></script>
+
+  <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
+  <script src="/components/copyButton.js"></script>
+
+  <script src="/components/contact.js"></script>
+
+  <a href="https://wa.me/+526565340734" class="whatsapp-button" target="_blank">
+    <img src="/images/whatsappLogo.png" alt="WhatsApp">
+  </a>
+  
+  
+</body>
+</html>

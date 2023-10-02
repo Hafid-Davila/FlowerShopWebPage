@@ -1,0 +1,443 @@
+/* Add some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #a12349;
+}
+
+.site-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #a12349;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header img {
+  height: 200px;
+}
+
+/* Style the navigation menu */
+.main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px 5px;
+  color:#ae1f4b;
+}
+
+.main-nav a:hover {
+  background-color: #958389;
+  border-radius: 4%;
+  color: #ffffff;
+}
+
+/* Add some basic styling to the main content */
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.text-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #a12349;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px; /* Add margin to the top of the button */
+}
+
+.btn:hover {
+  background-color: #00c38f;
+  color: #ffffff;
+}
+
+/* Style the footer */
+.site-footer {
+  background-color: #a12349;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: white;
+}
+
+/* Make the website responsive */
+@media (max-width: 600px) {
+  .site-header, .main-nav, .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav a {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a12349;
+    padding-bottom:10px;
+  }
+}
+
+/* card: styles.css */
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 75%;
+  height: auto;
+}
+
+.card-dropdown {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #a12349;  /* use the color from your .btn class */
+  color: #ffffff;  /* white text */
+  border: none;
+  border-radius: 5px;  /* rounded corners */
+  cursor: pointer;  /* change cursor to a hand when hovering over the dropdown */
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;  /* smooth transition */
+}
+
+.card-dropdown:hover {
+  background-color: #958389;  /* change background color when hovering over the dropdown */
+}
+
+
+
+@media (max-width: 600px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Custom styling for the product page */
+.card {
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow:0px 15px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  color: #a12349;
+  outline: #000;
+  outline-width: 1px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+  padding: 5px; /* Espacio alrededor del texto */
+  text-decoration: none; /* Esto quitará el subrayado */
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card-button {
+  display: inline-block;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #a12349;
+  color: white;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.card-button:hover {
+  background-color: #00c38f;
+}
+
+
+
+
+/* Custom copy button for the product page */
+
+.copy-button {
+  background-color: #ae1f4b; 
+  color: #fff; 
+  padding: 5px 10px; 
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #958389;
+}
+
+.submit-button {
+  background-color: #ae1f4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #958389;
+}
+
+
+
+/* Custom styling for the contact form */
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+}
+
+.main-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-content input[type="text"],
+.main-content input[type="email"],
+.main-content input[type="tel"],
+.main-content textarea,
+.main-content input[type="date"],
+.main-content input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-content input[type="date"]:focus,
+.main-content input[type="time"]:focus {
+  border-color: #ae1f4b;
+}
+
+.main-content textarea {
+  height: 120px;
+}
+
+.main-content button[type="submit"] {
+  background-color: #ae1f4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content button[type="submit"]:hover {
+  background-color: #958389;
+}
+
+
+/* Estilo para el dropdown */
+#categorias-dropdown {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #a12349;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#categorias-dropdown:hover {
+  border-color: #ae1f4b;
+  background-color: #958389;
+  color: #ffffff;
+}
+
+#categorias-dropdown:focus {
+  outline: none;
+  border-color: #ae1f4b;
+}
+
+/* Style for mobile menu */
+.burger {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 10px; /* Añade margen a la parte inferior del botón */
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #a12349;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu-text {
+  text-align: center; /* Centra el texto */
+  display: none; /* Asegúrate de que el texto "MENU" sólo se muestra en dispositivos pequeños */
+  margin-top: -30px; /* ajusta este valor según tu necesidad, este es el espacio entre el texto del menú y el botón de hamburguesa. */
+}
+
+@media (max-width: 768px) {
+  .menu-text {
+    display: block; /* Muestra el texto "MENU" en dispositivos pequeños */
+ 
+  }
+}
+
+/* Estilos para el menú de hamburguesa */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+}
+
+
+.burger.open div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.index-main .main-content {
+  display: flex;
+}
+
+/* Whatsapp button style*/
+
+/* Define the animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.whatsapp-button {
+  animation: bounce 2s infinite;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Por defecto, mostramos la imagen para computadoras y ocultamos la de celulares */
+.image-desktop {
+  display: block;
+}
+.image-mobile {
+  display: none;
+}
+
+/* Para dispositivos con un ancho de 768px o menos (típicos de celulares) */
+@media (max-width: 768px) {
+  .image-desktop {
+      display: none;
+  }
+  .image-mobile {
+      display: block;
+  }
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;     /* Centrar verticalmente */
+}
+

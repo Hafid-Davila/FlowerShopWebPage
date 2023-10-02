@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
+  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
+  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
+  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init('2SmJ-kqq1gDZQP-sv'); // Cambia esto por tu public key
+    })();
+  </script>
+</head>
+<body>
+
+ <header class="site-header">
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí añades la palabra "MENU" -->
+    <p class="menu-text">MENÚ</p>
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="/index.html">INICIO</a>
+        <a href="/pages/categorias.html">CATÁLAGO</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <section id="content" class="main-content">
+      
+      <h2>¡Bienvenido a nuestra tienda en línea!</h2>
+
+      <p>Estamos ansiosos de proporcionarte los mejores productos. Antes de hacer tu pedido, asegúrate de tener el ID del producto que deseas. </br> Este ID nos permite identificar exactamente lo que necesitas y agiliza el proceso de pedido.</p>
+
+      <p>Si ya conoces el ID de tu producto, ¡excelente! Continúa con tu compra y permítenos atenderte como mereces.</p>
+
+      <p>En caso de que no conozcas el ID del producto, no hay problema. </br> Te invitamos a explorar nuestro extenso y variado catálogo donde podrás encontrar el ID junto a la descripción de cada producto. </br>Solo tienes que dar click <strong><a href="categorias.html">aquí</a></strong> para comenzar tu búsqueda.</p>
+
+      <p><em>Tu satisfacción es nuestra prioridad. ¡Feliz compra!</em></p>
+
+      <h3>¡Entrega a domicilio gratis!</h3>
+
+      <p><em>NOTA: No todas las entregas aplican para “entrega Gratis” esto es dependiendo del sector de la entrega. </br> Todas las entregas son cotizadas y segun la ubicacion en la que se encuentre la direccion de entrega, <br> siempre se le notirficará si hay un cargo extra por la entrega.</em></p>
+
+      <p>Si tiene alguna duda, por favor comunicarse directamente a nuestro numero de Whatapp y le atenderemos con gusto.</p>
+
+      <p><strong>Para realizar tu pedido, llena el siguiente formulario y nos pondremos en contacto contigo para confirmar tu pedido.</strong></p>
+
+
+      <form id="contact-form" onsubmit="return false;">
+
+        <label for="item"><strong>Pega el ID del producto:</strong></label>
+        <input type="text" id="item" name="item" required> 
+        
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="name">Nombre destinatario:</label>
+        <input type="text" id="nombreDestinatario" name="nombreDestinatario" required>
+
+
+        <label for="address">Direccion de entrega:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Teléfono del destinatario</label>
+        <input type="tel" id="phone" name="phoneDestinatario" required>        
+
+        <label for="date">Fecha de entrega:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Hora de entrega:</label>
+        <input type="time" id="time" name="time" required>
+    
+        <label for="message">Mensaje al destinatario:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button class="submit-button" onclick="enviarMensajeWhatsApp()">Enviar</button>
+
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a href="https://www.instagram.com/my_instagram_account/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline  " target="_blank">Facebook</a>
+    <p>Copyright &copy; 2023 Regocijo Floreria Online</p>
+  </footer>
+
+  <script src="/components/contact.js"></script>
+  <script src="/components/burgerMenu.js"></script>
+
+  <a href="https://wa.me/+526565340734" class="whatsapp-button" target="_blank">
+    <img src="/images/whatsappLogo.png" alt="WhatsApp">
+  </a>
+  
+  
+
+</body>
+</html>

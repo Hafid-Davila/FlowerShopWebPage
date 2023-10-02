@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
+  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
+  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
+  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Agregamos referencia a nuestro archivo JavaScript -->
+  <script src="/components/categoriasDropdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+
+<body>
+  
+  <header class="site-header">
+    <img src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+
+    <!-- Aquí añades la palabra "MENU" -->
+    <p class="menu-text">MENÚ</p>
+
+    <!-- Aquí se agrega el botón de menú -->
+    <button class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <!-- Aquí se envuelve la navegación en un contenedor -->
+    <div id="nav" class="main-nav">
+      <nav>
+        <a href="/index.html">INICIO</a>
+        <a href="/pages/categorias.html">CATÁLAGO</a>
+        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+        <!--<a href="/pages/nuestraHistoria.html">NUESTRA HISTORIA</a>-->
+        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="site-main">
+
+    <section id="content" class="main-content">
+
+      <!-- Jewellery Section -->
+      <section id="joyeria">
+        <h2>Jewellery Gifts</h2>
+         <!-- Menú desplegable de categorías -->
+         <select id="categorias-dropdown" onchange="redirectToPage()">
+          <option value="">Selecciona una categoría</option>
+          <option value="/pages/catalogoArreglosTemporada.html">Arreglos de Temporada</option>
+          <!--<option value="/pages/catalagoRamos.html">Ramos</option>-->   
+          <option value="/pages/catalogoBoxFlowers.html">Box Flowers</option>
+          <option value="/pages/catalagoLuxury.html">Luxury Flowers</option>  
+          <option value="/pages/catalogoTazas.html">Flower Baskets</option> 
+          <option value="/pages/catalogoTazas.html">Flower Cups</option> 
+          <!--<option value="/pages/catalogoGlobos.html">Balloons</option> -->  
+          <option value="/pages/catalagoCondolencias.html">Condolencias</option> 
+          <option value="/pages/catalogoJarrones.html">Flower Jars</option>   
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <!-- Add cards section here -->
+
+        <div class="card-container">
+
+          <div class="card">
+            <img class="card-img" src="/public/images/gift_Joyeria/giftCadenasDijeAretes.svg" alt="Jarron con rosas y astromelia">
+            <h3 class="card-text">Cadenas Dije Aretes</h3>
+            <p class="card-text">$1,000.00</p>
+            <button class="card-button">ID: JL1000</button>
+            <p class="card-text">(Presiona para copiar ID)</p>
+          </div>
+
+        </div>  
+
+        
+
+      </section>
+
+      <a href="#" class="back-to-top">Categorias</a>
+
+
+    </section>
+   
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/RegocijoFloreriaOnline" target="_blank">Facebook</a>
+    <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
+  </footer>
+
+  <!-- Aquí se agrega el script de JavaScript -->
+  <script src="/components/burgerMenu.js"></script>
+
+  <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
+  <script src="/components/handleCardButtons.js"></script>
+
+  <a href="https://wa.me/+526564401000" class="whatsapp-button" target="_blank">
+    <img src="/images/whatsappLogo.png" alt="WhatsApp">
+  </a>
+  
+  
+</body>
+</html>
