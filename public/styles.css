@@ -441,3 +441,13 @@ body {
   align-items: center;     /* Centrar verticalmente */
 }
 
+
+
+/* logo adjustment */
+
+@media (max-width = 390px) {
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+}
