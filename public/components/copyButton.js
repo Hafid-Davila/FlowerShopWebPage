@@ -6,22 +6,29 @@ copyButtons.forEach(button => {
         // Prevent the button's default click behavior
         e.preventDefault();
 
+        // Accede a los elementos h3 y p dentro de la tarjeta
+        let card = this.closest('.card');
+        let h3Text = card.querySelector('h3').textContent;
+        let pText = card.querySelector('p').textContent;
+        
+        let copiedText = `${h3Text} ${pText}`;
+
         let input = document.createElement('input');
-        input.value = this.textContent;
+        input.value = copiedText;
         document.body.appendChild(input);
         input.select();
         document.execCommand('copy');
         document.body.removeChild(input);
 
-      // Within your button event listener
+        // Dentro del listener del botón
         Swal.fire({
-            title: 'ID del producto copiado al portapapeles, al presionar OK la pagina se redirige a la seccion de "Entrega a Domicilio".',
-            text: this.textContent,
+            title: 'Nombre del artículo copiado al portapapeles. Redirigiendo a la sección de "Entrega a Domicilio".',
+            text: copiedText,
             icon: 'success',
             timer: 3000,
             showConfirmButton: true
         }).then((result) => {
-            // Redirect after the SweetAlert closes
+            // Redirige después de cerrar el SweetAlert
             window.location.href = "/pages/contact.html";
         });
 

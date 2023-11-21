@@ -1,165 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regocijo Floreris Online - Venta de Flores y Arreglos Florales</title>
-  <meta name="description" content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto.">
-  <meta name="keywords" content="florería, flores, arreglos florales, regalos, ocasiones especiales">
-  <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
-  <link rel="stylesheet" href="/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Regocijo Floreris Online - Venta de Flores y Arreglos Florales
+    </title>
+    <meta
+      name="description"
+      content="Florería Flores Hermosas ofrece una amplia selección de flores frescas y arreglos florales para todo tipo de ocasiones. Contáctanos para encontrar el regalo perfecto."
+    />
+    <meta
+      name="keywords"
+      content="florería, flores, arreglos florales, regalos, ocasiones especiales"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg" />
+    <link rel="stylesheet" href="/styles.css" />
 
-  <!-- Agregamos referencia a nuestro archivo JavaScript -->
-  <script src="/components/categoriasDropdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Agregamos referencia a nuestro archivo JavaScript -->
+    <script src="/components/categoriasDropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
 
-</head>
+  <body>
+    <header class="site-header">
+      <img
+        class="logo"
+        src="/images/logoFondoTransparente500.png"
+        alt="Logo de Regocijo Floreria Online"
+      />
 
+      <!-- Aquí añades la palabra "MENU" -->
+      <p class="menu-text">MENÚ</p>
 
-<body>
-  <header class="site-header">
-    <img class="logo" src="/images/logoFondoTransparente500.png" alt="Logo de Regocijo Floreria Online">
+      <!-- Aquí se agrega el botón de menú -->
+      <button class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
 
-    <!-- Aquí añades la palabra "MENU" -->
-    <p class="menu-text">MENÚ</p>
+      <!-- Aquí se envuelve la navegación en un contenedor -->
+      <div id="nav" class="main-nav">
+        <nav>
+          <a href="/index.html">INICIO</a>
+          <a href="/pages/categorias.html">CATÁLOGO</a>
+          <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
+          <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
+          <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section id="content" class="main-content">
+        <!-- Luxury Section -->
+        <section id="luxury-flowers">
+          <h2>Luxury Flowers</h2>
+          <!-- Menú desplegable de categorías -->
+          <select id="categorias-dropdown" onchange="redirectToPage()">
+            <option value="">Selecciona una categoría</option>
+            <option value="/pages/catalogoArreglosTemporada.html">
+              Arreglos de Temporada
+            </option>
+            <option value="/pages/catalagoRamos.html">Ramos</option>
+            <option value="/pages/catalogoBoxFlowers.html">Box Flowers</option>
+            <option value="/pages/catalogoCanastas.html">Flower Baskets</option>
+            <option value="/pages/catalogoTazas.html">Flower Cups</option>
+            <option value="/pages/catalagoCondolencias.html">
+              Condolencias
+            </option>
+            <option value="/pages/catalogoJarrones.html">Flower Jars</option>
 
-    <!-- Aquí se agrega el botón de menú -->
-    <button class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
+            <!-- Agrega más opciones según sea necesario -->
+          </select>
 
-    <!-- Aquí se envuelve la navegación en un contenedor -->
-    <div id="nav" class="main-nav">
-      <nav>
-        <a href="/index.html">INICIO</a>
-        <a href="/pages/categorias.html">CATÁLOGO</a>
-        <a href="/pages/contact.html">ENTREGA A DOMICILIO</a>
-        <a href="/pages/eventos.html">ARREGLOS FLORALES PARA EVENTOS</a>
-        <a href="/pages/nuestrasPoliticas.html">NUESTRAS POLITICAS</a>
-      </nav>
-    </div>
-  </header>
-  <main class="site-main">
+          <!-- Add cards section here -->
 
-    <section id="content" class="main-content">
+          <div class="card-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/floresEncanto.svg"
+                alt="Jarron de cerámica negra con surtido de flores"
+              />
+              <h3 class="card-text">Flores Encanto</h3>
+              <p class="card-text amount">$2,200.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
 
-      <!-- Luxury Section -->
-      <section id="luxury-flowers">
-        <h2>Luxury Flowers</h2>
-         <!-- Menú desplegable de categorías -->
-         <select id="categorias-dropdown" onchange="redirectToPage()">
-          <option value="">Selecciona una categoría</option>
-          <option value="/pages/catalogoArreglosTemporada.html">Arreglos de Temporada</option>
-          <option value="/pages/catalagoRamos.html">Ramos</option>
-          <option value="/pages/catalogoBoxFlowers.html">Box Flowers</option> 
-          <option value="/pages/catalogoCanastas.html">Flower Baskets</option> 
-          <option value="/pages/catalogoTazas.html">Flower Cups</option> 
-          <option value="/pages/catalagoCondolencias.html">Condolencias</option> 
-          <option value="/pages/catalogoJarrones.html">Flower Jars</option>   
-           
-          <!-- Agrega más opciones según sea necesario -->
-        </select>
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/floresAlegría.svg"
+                alt="base de cerámica con surtido de flores"
+              />
+              <h3 class="card-text">Flores Alegria</h3>
+              <p class="card-text amount">$2,200.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
 
-        <!-- Add cards section here -->
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/floresAmistad.svg"
+                alt="base de cerámica con surtido de flores"
+              />
+              <h3 class="card-text">Flores Amistad</h3>
+              <p class="card-text amount">$2,200.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
 
-        <div class="card-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/floresTeAmoPorSiempre.svg"
+                alt="base de cerámica con 100 rosas"
+              />
+              <h3 class="card-text">Flores Amor Por Siempre</h3>
+              <p class="card-text amount">$3,200.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
 
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/floresEncanto.svg" alt="Jarron de cerámica negra con surtido de flores">
-            <h3 class="card-text">Flores Encanto</h3>
-            <p class="card-text">$2,200.00</p>
-            <button class="card-button">ID: FE2200</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/floresAdmiración.svg"
+                alt="flores ave de paraíso con rosas"
+              />
+              <h3 class="card-text">Flores Admiracion</h3>
+              <p class="card-text amount">$1,800.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/arregloRomance.svg"
+                alt="rosa inglesa, rosa y alstromelia"
+              />
+              <h3 class="card-text">Arreglo Romance</h3>
+              <p class="card-text amount">$3,000.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="/images/luxuryFlowers/arregloAlexandra.svg"
+                alt=""
+              />
+              <h3 class="card-text">Arreglo Alexandra</h3>
+              <p class="card-text amount">$2,400.00</p>
+              <button class="card-button">Selecciona Artículo</button>
+            </div>
           </div>
+        </section>
 
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/floresAlegría.svg" alt="base de cerámica con surtido de flores">
-            <h3 class="card-text">Flores Alegria</h3>
-            <p class="card-text">$2,200.00</p>
-            <button class="card-button">ID: FAL2200</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
-          </div>
-
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/floresAmistad.svg" alt="base de cerámica con surtido de flores">
-            <h3 class="card-text">Flores Amistad</h3>
-            <p class="card-text">$2,200.00</p>
-            <button class="card-button">ID: FAM2200</button>
-            <p class="card-text">(Presiona para copiar ID)</p>  
-          </div>
-
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/floresTeAmoPorSiempre.svg" alt="base de cerámica con 100 rosas">
-            <h3 class="card-text">Flores Amor Por Siempre</h3>
-            <p class="card-text">$3,200.00</p>
-            <button class="card-button">ID: FAPS3200</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
-          </div>
-
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/floresAdmiración.svg" alt="flores ave de paraíso con rosas">
-            <h3 class="card-text">Flores Admiracion</h3>
-            <p class="card-text">$1,800.00</p>
-            <button class="card-button">ID: FAD1800</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
-          </div>
-
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/arregloRomance.svg" alt="rosa inglesa, rosa y alstromelia">
-            <h3 class="card-text">Arreglo Romance</h3>
-            <p class="card-text">$3,000.00</p>
-            <button class="card-button">ID: AR3000</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
-          </div>
-
-          <div class="card">
-            <img class="card-img" src="/images/luxuryFlowers/arregloAlexandra.svg" alt="">
-            <h3 class="card-text">Arreglo Alexandra</h3>
-            <p class="card-text">$2,400.00</p>
-            <button class="card-button">ID: AA2400</button>
-            <p class="card-text">(Presiona para copiar ID)</p>
-          </div>
-
-        </div>
-
-
+        <a href="#" class="back-to-top">Categorias</a>
       </section>
+    </main>
 
-      <a href="#" class="back-to-top">Categorias</a>
+    <footer class="site-footer">
+      <p>Visita nuestras redes sociales</p>
 
+      <div class="social-footer">
+        <a
+          href="https://www.facebook.com/RegocijoFloreriaOnline"
+          class="social-logo"
+          target="blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"
+            />
+          </svg>
+        </a>
 
-    </section>
-   
-  </main>
+        <a
+          href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+          class="social-logo"
+          target="blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"
+            />
+          </svg>
+        </a>
+      </div>
 
-  <footer class="site-footer">
-    <p>Visita nuestras redes sociales</p>
+      <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
+    </footer>
 
-    <div class="social-footer">
-      <a href="https://www.facebook.com/RegocijoFloreriaOnline" class="social-logo" target="blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
-      </a>
+    <!-- Aquí se agrega el script de JavaScript -->
+    <script src="/components/burgerMenu.js"></script>
 
-      <a href="https://www.instagram.com/floreria_regocijo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="social-logo" target="blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
-      </a>
-    </div>
-   
-    <p id="copyright">Copyright &copy; 2023 Regocijo Floreria Online</p>
-  </footer>
+    <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
+    <script src="/components/copyButton.js"></script>
 
-  <!-- Aquí se agrega el script de JavaScript -->
-  <script src="/components/burgerMenu.js"></script>
+    <!-- FILEPATH: /C:/Users/Hafid/Desktop/RegocijoFloreriaOnlineWebPage/public/pages/catalagoRamos.html -->
+    <!-- This script tag includes the JavaScript file "incrementAmount.js" which is responsible for incrementing the amount. -->
+    <script src="/components/incrementAmount.js"></script>
 
-  <!-- Aquí se agrega el script que maneja los botones de las tarjetas -->
-  <script src="/components/copyButton.js"></script>
-
-  <a href="https://wa.me/+526565340734" class="whatsapp-button" target="_blank">
-    <img src="/images/whatsappLogo.png" alt="WhatsApp">
-  </a>
-  
-  
-</body>
+    <a
+      href="https://wa.me/+526565340734"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img src="/images/whatsappLogo.png" alt="WhatsApp" />
+    </a>
+  </body>
 </html>
