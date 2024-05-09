@@ -64,7 +64,7 @@ body {
 
 .btn {
   max-width: 400px;
-  background-color: #E16094;
+  background-color: #a12349;
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
@@ -79,7 +79,7 @@ body {
 
 @media (max-width:400px) {
   .btn {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 /* Make the website responsive */
-@media (max-width: 600px) {
+@media (max-width: 928px) {
   .site-header,
   .main-nav,
   .site-footer {
@@ -339,14 +339,14 @@ body {
   margin-top: -30px; /* ajusta este valor según tu necesidad, este es el espacio entre el texto del menú y el botón de hamburguesa. */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 928px) {
   .menu-text {
     display: block; /* Muestra el texto "MENU" en dispositivos pequeños */
   }
 }
 
 /* Estilos para el menú de hamburguesa */
-@media (max-width: 768px) {
+@media (max-width: 928px) {
   .main-nav {
     display: none;
   }
@@ -431,7 +431,7 @@ body {
 }
 
 /* Para dispositivos con un ancho de 768px o menos (típicos de celulares) */
-@media (max-width: 768px) {
+@media (max-width: 928px) {
   .image-desktop {
     display: none;
   }
@@ -466,3 +466,6 @@ body {
   fill: #ffffff;
   margin: 10px;
 }
+
+
+
